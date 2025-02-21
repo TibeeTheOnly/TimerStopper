@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="StopperWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="StopperDisplay" Text="00:00:00" FontSize="40" 
+                       HorizontalAlignment="Center" Margin="10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" Margin="10">
+                <Button x:Name="btnStart" Content="Start" Width="150" Height="40" 
+                        Margin="5" Click="btnStart_Click"/>
+                <Button x:Name="btnStop" Content="Stop" Width="150" Height="40" 
+                        Margin="5" Click="btnStop_Click"/>
+                <Button x:Name="btnReset" Content="Reset" Width="150" Height="40"
+                        Margin="5" Click="btnReset_Click"/>
+            </StackPanel>
+            <TextBlock Text="Jelenlegi állapotában a stopper NEM pontos, KÉSIK!" 
+                       Foreground="Red" FontSize="15" HorizontalAlignment="Center" Margin="5"/>
+        </StackPanel>
     </Grid>
 </Window>
