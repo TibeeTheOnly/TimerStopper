@@ -1,0 +1,24 @@
+﻿<Window x:Class="TimerStopper.TimerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimerStopper"
+        mc:Ignorable="d"
+        Title="TimerWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="txtTimer" FontSize="30" Text="00:00:00"
+                       HorizontalAlignment="Center" Margin="10"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="btnStart" Content="Start" Width="150" Height="40" Margin="5" Click="btnStart_Click"/>
+                <Button x:Name="btnStop" Content="Stop" Width="150" Height="40" Margin="5" Click="btnStop_Click"/>
+                <Button x:Name="btnReset" Content="Reset" Width="150" Height="40" Margin="5" Click="btnReset_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10">
+                <TextBox x:Name="TimerInput" Width="100" Height="30" HorizontalAlignment="Center"/>
+                <Button Content="Set Timer" Width="80" Height="30" Margin="5" Click="SetTimer"/>
+            </StackPanel>
+        </StackPanel>    
+    </Grid>
+</Window>
