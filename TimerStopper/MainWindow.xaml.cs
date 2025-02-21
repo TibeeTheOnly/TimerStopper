@@ -20,5 +20,17 @@ namespace TimerStopper
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var stopperWindow = new StopperWindow();
+            stopperWindow.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var timerWindow = new TimerWindow();
+            timerWindow.Show();
+        }
     }
 }
